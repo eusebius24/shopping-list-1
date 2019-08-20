@@ -23,10 +23,7 @@ $(function(){
         $('#shopping-list-entry').val('');
     });
 
-    /*$(:submit).on('click', function(){
-        event.preventDefault();
-        $(this).css('background-color', 'green');
-    });*/
+   
 
     $('.shopping-list').on('click', 'li div .shopping-item-toggle', function(){
         $(this).parents()
@@ -66,16 +63,5 @@ $(function(){
 
    
 
-    /*$('#shopping-list-entry').keypress(function(event){
-        var newItem = $(this).val();
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        if(keycode == '13'){
-            var newListItem = '<li>' + newItem + '</li>';
-            event.preventDefault();
-            $(this).parents()
-            .children('ul')
-             .append(newListItem);
-             $('#shopping-list-entry').val('');
-    });*/
-
+   
 });
